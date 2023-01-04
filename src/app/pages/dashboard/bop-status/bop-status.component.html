@@ -1,0 +1,187 @@
+<div class="my-staus-img">
+    <img src="../assets/white-status.svg" *ngIf="checked" class="bop-img-class" />
+    <!-- <img src="../assets/bop_model_light.png" *ngIf="!checked" class="boplight-img-class" /> -->
+    <div class="frame1 frame-label" [ngClass]="getBorderClass(mbvBorder)"
+        [ngStyle]="{ 'background-color': getModelColor(MBVbg) }">
+        MBV
+        <span *ngIf="mbvStatus == 0">C</span>
+        <span *ngIf="mbvStatus == 1">O</span>
+        <!-- <span [ngStyle]="{'color':getLabelColor('1')}" >O</span> -->
+    </div>
+
+    <div class="frame1 frame-label" style="left: 89px; top: calc((43% - 4px) - 73.5px)"
+        [ngClass]="getBorderClass(uaBorder)" [ngStyle]="{ 'background-color': getModelColor(uabg) }">
+        UA
+        <span *ngIf="uaStatus == 0">C</span>
+        <span *ngIf="uaStatus == 1">O</span>
+    </div>
+
+    <div class="frame1 frame-label" style="left: 13px; top: calc((43% - 4px) - 49.5px)"
+        [ngClass]="getBorderClass(ogbBorder)" [ngStyle]="{ 'background-color': getModelColor(OGBbg) }">
+        OGB
+        <span *ngIf="OGBStatus == 0">C</span>
+        <span *ngIf="OGBStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 53px; top: calc((43% - 4px) - 49.5px)"
+        [ngClass]="getBorderClass(igbBorder)" [ngStyle]="{ 'background-color': getModelColor(IGBbg) }">
+        IGB
+        <span *ngIf="IGBStatus == 0">C</span>
+        <span *ngIf="IGBStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 89px; top: calc((43% - 4px) - 23.5px)"
+        [ngClass]="getBorderClass(laBorder)" [ngStyle]="{ 'background-color': getModelColor(LAbg) }">
+        LA
+        <span *ngIf="LAStatus == 0">C</span>
+        <span *ngIf="LAStatus == 1">O</span>
+    </div>
+
+    <div class="frame1 frame-label" style="left: 11px; top: calc((43% - 4px) - 23.5px)"
+        [ngClass]="getBorderClass(civBorder)" [ngStyle]="{ 'background-color': getModelColor(1) }">
+        CIV
+        <span *ngIf="CIVStatus == 0">C</span>
+        <span *ngIf="CIVStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 166px; top: calc((43% - 4px) - 23.5px)"
+        [ngClass]="getBorderClass(kivBorder)" [ngStyle]="{ 'background-color': getModelColor(KIVbg) }">
+        KIV
+        <span *ngIf="KIVStatus == 0">C</span>
+        <span *ngIf="KIVStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 11px; top: calc((49% - 4px) - 25.5px)"
+        [ngClass]="getBorderClass(ccBorder)" [ngStyle]="{ 'background-color': getModelColor(CCbg) }">
+        CC
+        <span *ngIf="CCStatus == 0">C</span>
+        <span *ngIf="CCStatus == 1">O</span>
+
+    </div>
+    <div class="frame1 frame-label" style="left: 166px; top: calc((49% - 4px) - 25.5px)"
+        [ngClass]="getBorderClass(kcBorder)" [ngStyle]="{ 'background-color': getModelColor(KCbg) }">
+        KC
+        <span *ngIf="KCStatus == 0">C</span>
+        <span *ngIf="KCStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 78px; top: calc((52% - 4px) - 20.5px); width: 50px"
+        [ngClass]="getBorderClass(lmrpcBorder)" [ngStyle]="{ 'background-color': getModelColor(LMRPCbg) }">
+        <span> LMRPC </span>
+        <span *ngIf="LMRPCStatus == 0">L</span>
+        <span *ngIf="LMRPCStatus == 1">U</span>
+        <span *ngIf="LMRPCsec">HPC</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 78px; top: calc((57% - 4px) - 21.5px); width: 50px"
+        [ngClass]="getBorderClass(ubsrBorder)" [ngStyle]="{ 'background-color': getModelColor(UBSRbg) }">
+        <span> UBSR </span>
+
+        <span *ngIf="UBSRStatus == 0">C</span>
+        <span *ngIf="UBSRStatus == 1">O</span>
+        <span *ngIf="UBSRsec" [ngStyle]="{'color': uBSRhpc == 1  ? 'red' :  'white' }">HPC</span>
+
+
+    </div>
+    <div class="frame1 frame-label" style="left: 80px; top: calc((57% - 4px) - 5.5px); width: 45px"
+        [ngClass]="getBorderClass(csrBorder)" [ngStyle]="{ 'background-color': getModelColor(CSRbg) }">
+        <span> CSR </span>
+        <span *ngIf="CSRStatus == 0">C</span>
+        <span *ngIf="CSRStatus == 1">O</span>
+        <span *ngIf="CSRsec" [ngStyle]="{'color': CsrHpc == 1  ? 'red' :  'white' }">HPC</span>
+
+
+    </div>
+    <div class="frame1 frame-label" style="left: 135px; top: calc((57% - 4px) - 3.5px); min-width: 23px"
+        [ngClass]="getBorderClass(uikBorder)" [ngStyle]="{ 'background-color': getModelColor(UIKbg) }">
+        UIK
+        <span *ngIf="UIKStatus == 0">C</span>
+        <span *ngIf="UIKStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 167px; top: calc((57% - 4px) - 3.5px); min-width: 25px"
+        [ngClass]="getBorderClass(uokBorder)" [ngStyle]="{ 'background-color': getModelColor(UOKbg) }">
+        UOK
+        <span *ngIf="UOKStatus == 0">C</span>
+        <span *ngIf="UOKStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 78px; top: calc((62% - 4px) - 11.5px); width: 50px"
+        [ngClass]="getBorderClass(lbsrBorder)" [ngStyle]="{ 'background-color': getModelColor(LBSRbg) }">
+        <span> LBSR </span>
+        <span *ngIf="LBSRStatus == 0">C</span>
+        <span *ngIf="LBSRStatus == 1">O</span>
+        <span *ngIf="LBSRsec" [ngStyle]="{'color': LBSRhpc == 1  ? 'red' :  'white' }">HPC</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 45px; top: calc((62% - 4px) - 11.5px); min-width: 23px"
+        [ngClass]="getBorderClass(uicBorder)" [ngStyle]="{ 'background-color': getModelColor(UICbg) }">
+        UIC
+        <span *ngIf="UICStatus == 0">C</span>
+        <span *ngIf="UICStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 11px; top: calc((62% - 4px) - 11.5px); min-width: 25px"
+        [ngClass]="getBorderClass(uocBorder)" [ngStyle]="{ 'background-color': getModelColor(UOCbg) }">
+        UOC
+        <span *ngIf="UOCStatus == 0">C</span>
+        <span *ngIf="UOCStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 88px; top: calc((68% - 4px) - 11.5px)"
+        [ngClass]="getBorderClass(uprBorder)" [ngStyle]="{ 'background-color': getModelColor(UPRbg) }">
+        UPR
+        <span *ngIf="UPRStatus == 0">C</span>
+        <span *ngIf="UPRStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 88px; top: calc((72% - 4px) - 12.5px)"
+        [ngClass]="getBorderClass(mprBorder)" [ngStyle]="{ 'background-color': getModelColor(MPRbg) }">
+        MPR
+        <span *ngIf="MPRStatus == 0">C</span>
+        <span *ngIf="MPRStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 128px; min-width: 27px; top: calc((72% - 4px) - 12.5px)"
+        [ngClass]="getBorderClass(mikBorder)" [ngStyle]="{ 'background-color': getModelColor(1) }">
+        MIK
+        <span *ngIf="MIKStatus == 0">C</span>
+        <span *ngIf="MIKStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 164px; min-width: 27px; top: calc((72% - 4px) - 12.5px)"
+        [ngClass]="getBorderClass(mokBorder)" [ngStyle]="{ 'background-color': getModelColor(1) }">
+        MOK
+        <span *ngIf="MOKStatus == 0">C</span>
+        <span *ngIf="MOKStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 88px; top: calc((75% - 4px) - 11.5px)"
+        [ngClass]="getBorderClass(lprBorder)" [ngStyle]="{ 'background-color': getModelColor(LPRbg) }">
+        LPR
+        <span *ngIf="LPRStatus == 0">C</span>
+        <span *ngIf="LPRStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 27px; min-width: 20px; top: calc((75% - 4px) - 10.5px)"
+        [ngClass]="getBorderClass(locBorder)" [ngStyle]="{ 'background-color': getModelColor(LOCbg) }">
+        LOC
+        <span *ngIf="LOCStatus == 0">C</span>
+        <span *ngIf="LOCStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 57px; min-width: 21px; top: calc((75% - 4px) - 10.5px)"
+        [ngClass]="getBorderClass(licBorder)" [ngStyle]="{ 'background-color': getModelColor(LICbg) }">
+        LIC
+        <span *ngIf="LICStatus == 0">C</span>
+        <span *ngIf="LICStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 129px; min-width: 23px; top: calc((80% - 4px) - 16.5px)"
+        [ngClass]="getBorderClass(likBorder)" [ngStyle]="{ 'background-color': getModelColor(LIKbg) }">
+        LIK
+        <span *ngIf="LIKStatus == 0">C</span>
+        <span *ngIf="LIKStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 161px; min-width: 25px; top: calc((80% - 4px) - 16.5px)"
+        [ngClass]="getBorderClass(lokBorder)" [ngStyle]="{ 'background-color': getModelColor(LOKbg) }">
+        LOK
+        <span *ngIf="LOKStatus == 0">C</span>
+        <span *ngIf="LOKStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 88px; top: calc((82% - 4px) - 15.5px)"
+        [ngClass]="getBorderClass(trBorder)" [ngStyle]="{ 'background-color': getModelColor(TRbg) }">
+        TR
+        <span *ngIf="TRStatus == 0">C</span>
+        <span *ngIf="TRStatus == 1">O</span>
+    </div>
+    <div class="frame1 frame-label" style="left: 81px; top: calc((88% - 4px) - 11.5px); width: 43px"
+        [ngClass]="getBorderClass(whcBorder)" [ngStyle]="{ 'background-color': getModelColor(WHCbg) }">
+        <span> WHC </span>
+        <span *ngIf="WHCStatus == 0">L</span>
+        <span *ngIf="WHCStatus == 1">U</span>
+        <span *ngIf="WHCsec">SU</span>
+    </div>
+</div>

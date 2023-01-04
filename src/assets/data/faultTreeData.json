@@ -1,0 +1,1163 @@
+{
+    "name": "Failure of API_S53 Compliance with 4th Edition", 
+    "value": 99.9985,
+  
+   "id":0, "nodeValue": 0, "alarm": 0,
+    "children": [
+      {
+        "name": "API S53 Rule Section 7.1.3.1.1",
+        "value": "OR",
+       "id":0, "nodeValue": 0, "alarm": 0,
+       
+        "children": [
+          {
+            "name": "Failure to close and seal on drill pipe, Tubling, Casing or Liner and Allow Circulation",
+            "value": 98.33,
+           "id":0, "nodeValue": 0, "alarm": 0,
+         
+            "lineStyle": {
+              "color": "rgba(228, 66, 66, 1)"
+            },
+            "label": {
+              "borderColor": "rgba(221, 92, 92, 1)"
+            }
+          },
+          {
+            "name": "API S53 Rule 7.1.3.1.1.B",
+            "value": "OR",
+           "id":0, "nodeValue": 0, "alarm": 0,
+            "children": [
+              {
+                "name": "Failure to Close and Seal On Open Hole and Allow Circulation",
+                "value": "AND",
+               "id":0, "nodeValue": 0, "alarm": 0,
+                "children":[
+                  {
+                    "name": "Fail to Close and Seal Open Hole and Allow Circulation-Yellow",
+                    "value": "AND",
+                   "id":0, "nodeValue": 0, "alarm": 0,
+                    "children":[
+                      {
+                        "name": "Fail to Close/Seal Open Hole Using BSR-No Choke-Yellow",
+                        "value": "AND",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children":[
+                          {
+                            "name": "Upper Choke Line Unavailable Using BSRs for Isolation-Yellow",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Upper Choke Line Fails from Pod-Yellow",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Failure of UBSR All Functions via HP and LP-Yellow",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(HP)-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(LP)-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Middle Choke Line Unavailable Using BSRs for Isolation-Yellow",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Middle Choke Line-Fails-Yellow",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Failure to Isolate Above MCL Using BSR-Yellow",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Yellow",
+                                    "value": "AND",
+                                   "id":0, "nodeValue": 0, "alarm": 0,
+                                    "children":[
+                                      {
+                                        "name": "Failure of LBSR Open,Close,Lock,Unlock,or Seal(HP)-Yellow",
+                                        "value": "",
+                                       "id":0, "nodeValue": 0, "alarm": 0
+                                      },
+                                      {
+                                        "name": "Failure of LBSR Open,Close,Lock,Unlock,or Seal(LP)-Yellow",
+                                        "value": "",
+                                       "id":0, "nodeValue": 0, "alarm": 0
+                                      }
+                                    ] 
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Lower Choke Line Unavailable Using BSRs for Isolation-Yellow",
+                            "value": "AND",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Lower Choke Line Fails-Yellow",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Failure to Isolate Above LCL Using BSR-Yellow",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Fail to Close/Seal Open Hole Using BSR-No Kill-Yellow",
+                        "value": "AND",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children":[
+                          {
+                            "name": "Upper Kill Line Unavailable using BSRs for isolation-Yellow",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Upper Kill Line Fails-Yellow",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Failure to Isolate Above UKL Using BSR-Yellow",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Lower Kill Line Unavailable using BSRs for isolation-Yellow",
+                            "value": "AND",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Lower Kill Line Fails-Yellow",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Failure to Isolate Above LKL Using BSR-Yellow",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fail to Close and Seal Open Hole and Allow Circulation-Blue",
+                    "value": "AND",
+                   "id":0, "nodeValue": 0, "alarm": 0,
+                    "children":[
+                      {
+                        "name": "Fail to Close/Seal Open Hole Using BSR-No Choke-blue",
+                        "value": "AND",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children":[
+                          {
+                            "name": "Upper Choke Line Unavailable Using BSRs for Isolation-Blue",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Failure of UBSR All Functions via HP and LP-Blue",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(HP)-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(LP)-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Upper Choke Line Fails from Pod-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Middle Choke Line Unavailable Using BSRs for Isolation-Blue",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Failure to Isolate Above MCL Using BSR-Blue",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Blue",
+                                    "value": "AND",
+                                   "id":0, "nodeValue": 0, "alarm": 0,
+                                    "children":[
+                                      {
+                                        "name": "Failure of LBSR Open,Close,Lock,Unlock,or Seal(HP)-Yellow",
+                                        "value": "",
+                                       "id":0, "nodeValue": 0, "alarm": 0
+                                      },
+                                      {
+                                        "name": "Failure of LBSR Open,Close,Lock,Unlock,or Seal(LP)-Yellow",
+                                        "value": "",
+                                       "id":0, "nodeValue": 0, "alarm": 0
+                                      }
+                                    ]
+                                    
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Middle Choke Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Lower Choke Line Unavailable Using BSRs for Isolation-Blue",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Failure to Isolate Above LCL Using BSR-Blue",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Lower Choke Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Fail to Close/Seal Open Hole Using BSR-No Kill-blue",
+                        "value": "AND",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children":[
+                          {
+                            "name": "Upper Kill Line Unavailable using BSRs for isolation-Blue",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Failure to Isolate Above UKL Using BSR-Blue",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0 
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Upper Kill Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Lower Kill Line Unavailable using BSRs for isolation-Blue",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children":[
+                              {
+                                "name": "Failure to Isolate Above LKL Using BSR-Blue",
+                                "value": "AND",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children":[
+                                  {
+                                    "name": "Failure of LBSR All Functions via HP and LP-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Failure of UBSR All Functions via HP and LP-Blue",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Lower Kill Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "API S53 Rule 7.1.3.1.1.C",
+                "value": "OR",
+               "id":0, "nodeValue": 0, "alarm": 0,
+                "children": [
+                  {
+                    "name": "Failure to Strip Drill String(Excluding BHA)",
+                    "value": "AND",
+                   "id":0, "nodeValue": 0, "alarm": 0,
+                    "children": [
+                      {
+                        "name": "Failure to Strip Drill String-Yellow",
+                        "value": "AND",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children": [
+                          {
+                            "name": "Failure of Upper Annular For Stripping-Yellow",
+                            "value": "OR",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children": [
+                              {
+                                "name": "UAP-Fail to Open,Close or Seal-Yellow",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Failure of All Choke and Kill Lines-Yellow",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0,
+                                "children": [
+                                  {
+                                    "name": "Upper Choke Line Fails from Pod-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Middle Choke Line Fails-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Lower Choke Line Fails-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Upper Kill Line Fails-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  },
+                                  {
+                                    "name": "Lower Kill Line Fails-Yellow",
+                                    "value": "",
+                                   "id":0, "nodeValue": 0, "alarm": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                      {
+                        "name": "Failure to Strip Drill String using Lower Annular-Yellow",
+                        "value": "OR",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children": [
+                          {
+                            "name": "LAP-Fail to Open,Close,Or Seal-Yellow",
+                            "value": "",
+                           "id":0, "nodeValue": 0, "alarm": 0
+                          },
+                          {
+                            "name": "Failure of All Choke and Kill Lines-Yellow",
+                            "value": "",
+                           "id":0, "nodeValue": 0, "alarm": 0
+                          }
+                        ]
+                      }
+                      
+                    ]
+                  },
+                  {
+                    "name": "Failure to Strip Drill String-Blue",
+                    "value": "AND",
+                   "id":0, "nodeValue": 0, "alarm": 0,
+                    "children": [
+                      {
+                        "name": "Failure of Upper Annular For Stripping-Blue",
+                        "value": "OR",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children": [
+                          {
+                            "name": "UAP-Fail to Open,Close or Seal-Blue",
+                            "value": "",
+                           "id":0, "nodeValue": 0, "alarm": 0
+                          },
+                          {
+                            "name": "Failure of All Choke and Kill Lines-Blue",
+                            "value": "AND",
+                           "id":0, "nodeValue": 0, "alarm": 0,
+                            "children": [
+                              {
+                                "name": "Upper Choke Line Fails from Pod-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Middle Choke Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Lower Choke Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Upper Kill Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              },
+                              {
+                                "name": "Lower Kill Line Fails-Blue",
+                                "value": "",
+                               "id":0, "nodeValue": 0, "alarm": 0
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Failure to Strip Drill String Using Lower Annular-Blue",
+                        "value": "OR",
+                       "id":0, "nodeValue": 0, "alarm": 0,
+                        "children": [
+                          {
+                            "name": "LAP-Fail to Open,Close, Or Seal-Blue",
+                            "value": "",
+                           "id":0, "nodeValue": 0, "alarm": 0
+                          },
+                          {
+                            "name": "Failure of All Choke and Kill Lines-Blue",
+                            "value": "",
+                           "id":0, "nodeValue": 0, "alarm": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+  
+            
+          ]
+        },
+        {
+          "name": "API S53 Rule 7.1.3.1.1.D",
+          "value": "OR",
+         "id":0, "nodeValue": 0, "alarm": 0,
+          "children": [
+            {
+              "name": "Failure to Hangoff Drill Pipe and control the Wellbore",
+              "value": 98.33,
+             "id":0, "nodeValue": 0, "alarm": 0
+            },
+            {
+              "name": "API S53 Rule 7.1.3.1.1.E",
+              "value": "OR",
+             "id":0, "nodeValue": 0, "alarm": 0,
+              "children": [
+                {
+                  "name": "Failure to Shear and Seal Drillpipe as required by API STD 53 and 30 CFR 250.732 (a)(1)(i)",
+                  "value": "AND",
+                 "id":0, "nodeValue": 0, "alarm": 0,
+                  "children": [
+                    {
+                      "name": "Failure to Shear and Seal Drillpipe as required by API STD 53 and 30 CFR 250.732 (a)(1)(i)-Yellow",
+                      "value": "AND",
+                     "id":0, "nodeValue": 0, "alarm": 0,
+                      "children": [
+                        {
+                          "name": "Failure to CSR to Cut and UBSR to Seal-Yellow",
+                          "value": "OR",
+                         "id":0, "nodeValue": 0, "alarm": 0,
+                          "children": [
+                            {
+                              "name": "Failure of CSR to Cut the Casing-Yellow",
+                              "value": "AND",
+                             "id":0, "nodeValue": 0, "alarm": 0,
+                              "children": [
+                                {
+                                  "name": "Failure of CSR Open, Close, (HP)-Yellow",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                },
+                                {
+                                  "name": "Failure of CSR Open, Close, (LP)-Yellow",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Failure to UBSR to Cut and Seal-Yellow",
+                              "value": "AND",
+                             "id":0, "nodeValue": 0, "alarm": 0,
+                              "children": [
+                                {
+                                  "name": "Failure to UBSR Open, Close, Lock, Unlock or Seal (HP)-Yellow",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                },
+                                {
+                                  "name": "Failure to UBSR Open, Close, Lock, Unlock or Seal (LP)-Yellow",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Failure to UBSR Open, Close, Lock, Unlock or Seal (HP)-Yellow",
+                          "value": 98.33,
+                         "id":0, "nodeValue": 0, "alarm": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Failure to Shear and Seal Drillpipe as required by API STD 53 and 30 CFR 250.732 (a)(1)(i)-Blue",
+                      "value": "AND",
+                     "id":0, "nodeValue": 0, "alarm": 0,
+                      "children": [
+                        {
+                          "name": "Failure to CSR to Cut and UBSR to Seal-Blue",
+                          "value": "OR",
+                         "id":0, "nodeValue": 0, "alarm": 0,
+                          "children": [
+                            {
+                              "name": "Failure of CSR to Cut the Casing-Blue",
+                              "value": "AND",
+                             "id":0, "nodeValue": 0, "alarm": 0,
+                              "children": [
+                                {
+                                  "name": "Failure of CSR Open, Close, (HP)-Blue",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                },
+                                {
+                                  "name": "Failure of CSR Open, Close, (LP)-Blue",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Failure to UBSR to Cut and Seal-Blue",
+                              "value": "AND",
+                             "id":0, "nodeValue": 0, "alarm": 0,
+                              "children": [
+                                {
+                                  "name": "Failure to UBSR Open, Close, Lock, Unlock or Seal (HP)-Blue",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                },
+                                {
+                                  "name": "Failure to UBSR Open, Close, Lock, Unlock or Seal (LP)-Blue",
+                                  "value": 98.33,
+                                 "id":0, "nodeValue": 0, "alarm": 0
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Failure to UBSR Open, Close, Lock, Unlock or Seal (HP)-Blue",
+                          "value": 98.33,
+                         "id":0, "nodeValue": 0, "alarm": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "API S53 Rule 7.1.3.1.1.F",
+                  "value": "OR",
+                 "id":0, "nodeValue": 0, "alarm": 0,
+                  "children": [
+                    {
+                      "name": "Failure of Riser Disconnect from BOP Stack",
+                      "value": "AND",
+                     "id":0, "nodeValue": 0, "alarm": 0,
+                      "children": [
+                        {
+                          "name": "Failure to Disconnect Riser-Yellow",
+                          "value": "AND",
+                         "id":0, "nodeValue": 0, "alarm": 0,
+                          "children": [
+                            {
+                              "name": "Failure of Riser Primary Unlock-Yellow",
+                              "value": "",
+                             "id":0, "nodeValue": 0, "alarm": 0
+                            },
+                            {
+                              "name": "Failure of Riser Seconday Unlock-Yellow",
+                              "value": "",
+                             "id":0, "nodeValue": 0, "alarm": 0
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Failure to Disconnect Riser-Blue",
+                          "value": "AND",
+                         "id":0, "nodeValue": 0, "alarm": 0,
+                          "children": [
+                            {
+                              "name": "Failure of Riser Primary Unlock-Blue",
+                              "value": "",
+                             "id":0, "nodeValue": 0, "alarm": 0
+                            },
+                            {
+                              "name": "Failure of Riser Seconday Unlock-Blue",
+                              "value": "",
+                             "id":0, "nodeValue": 0, "alarm": 0
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "API S53 Rule 7.1.3.1.1.G",
+                      "value": "OR",
+                     "id":0, "nodeValue": 0, "alarm": 0,
+                      "children": [
+                        {
+                          "name": "Failure to Circulate after Drill Pipe Disconnect",
+                          "value": 98.33,
+                         "id":0, "nodeValue": 0, "alarm": 0
+                        },
+                        {
+                          "name": "API S53 Rule 7.1.3.1.1.H",
+                          "value": "OR",
+                         "id":0, "nodeValue": 0, "alarm": 0,
+                          "children": [
+                            {
+                              "name": "Failure to Circulate Trapped Gas and remove",
+                              "value": "AND",
+                             "id":0, "nodeValue": 0, "alarm": 0,
+                              "children": [
+                                {
+                                  "name": "Failure to Circulate Trapped Gas-Yellow",
+                                  "value": "AND",
+                                 "id":0, "nodeValue": 0, "alarm": 0,
+                                  "children": [
+                                    {
+                                      "name": "Failure of Upper Gas Relief and Annular to Isolate-Yellow",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "Failure of Upper Gas Relief-Yellow",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        },
+                                        {
+                                          "name": "UAP - Fail to Open, Close or Seal-Yellow",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Failure of Lower Gas Relief and Annular to Isolate-Yellow",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "Failure of Lower Gas Relief-Yellow",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        },
+                                        {
+                                          "name": "LAP - Fail to Open, Close or Seal-Yellow",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Failure of Upper Choke and No Isolate with UBSR-Yellow",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "Upper Choke Line Fails from Pod-Yellow",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        },
+                                        {
+                                          "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(HP)-Yellow",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Failure to Circulate Trapped Gas-Blue",
+                                  "value": "AND",
+                                 "id":0, "nodeValue": 0, "alarm": 0,
+                                  "children": [
+                                    {
+                                      "name": "Failure of Upper Gas Relief and Annular to Isolate-Blue",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "Failure of Upper Gas Relief-Blue",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        },
+                                        {
+                                          "name": "UAP - Fail to Open, Close or Seal-Blue",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Failure of Lower Gas Relief and Annular to Isolate-Blue",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "Failure of Lower Gas Relief-Blue",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        },
+                                        {
+                                          "name": "LAP - Fail to Open, Close or Seal-Blue",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Failure of Upper Choke and No Isolate with UBSR-Blue",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "Upper Choke Line Fails from Pod-Blue",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        },
+                                        {
+                                          "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(HP)-Blue",
+                                          "value": 98.33,
+                                         "id":0, "nodeValue": 0, "alarm": 0
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "API-ROV-DMAS",
+                              "value": "OR",
+                             "id":0, "nodeValue": 0, "alarm": 0,
+                              "children": [
+                                {
+                                  "name": "Failure to Meet APIS53 Minimum BOP (Ann, PR, SR) ",
+                                  "value": "AND",
+                                 "id":0, "nodeValue": 0, "alarm": 0,
+                                  "children":[
+                                    {
+                                      "name": "Failure of API S53 Class 5 Requirements Not Met-Yellow",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children":[
+                                        {
+                                          "name": "Failure to Meet Minimum of One Annular-Yellow",
+                                          "value": "AND",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children":[
+                                            {
+                                              "name": "UAP-Fail to Open,Close or Seal-Yellow",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "LAP - Fail to Open, Close or Seal-Yellow",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Failure to Meet Minimum Pipe Ram Requirement-Yellow",
+                                          "value": "OR",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children":[
+                                            {
+                                              "name": "UPR-Fail to Open,Close,Lock,Unlock, or Seal-Yellow",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "MPR-Fail to Open,Close,Lock,Unlock, or Seal-Yellow",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "LPR-Fail to Open,Close,Lock,Unlock, or Seal-Yellow",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Failure of CSR and BSR HP/LP-Yellow",
+                                          "value": "OR",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children":[
+                                            {
+                                              "name": "Failure of CSR HP/LP-Yellow",
+                                              "value": "AND",
+                                             "id":0, "nodeValue": 0, "alarm": 0,
+                                              "children":[
+                                                {
+                                                  "name": "Failure of CSR Open, Close, (HP)-Yellow",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                },
+                                                {
+                                                  "name": "Failure of CSR Open, Close, (LP)-Yellow",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(HP)-Yellow",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Failure of API S53 Class 5 Requirements Not Met-Blue",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children":[
+                                        {
+                                          "name": "Failure to Meet Minimum of One Annular-Blue",
+                                          "value": "AND",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children":[
+                                            {
+                                              "name": "UAP-Fail to Open,Close or Seal-Blue",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "LAP-Fail to Open,Close, Or Seal-Blue",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Failure to Meet Minimum Pipe Ram Requirement-Blue",
+                                          "value": "AND",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children":[
+                                            {
+                                              "name": "UPR-Fail to Open,Close,Lock,Unlock, or Seal-Blue",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "MPR-Fail to Open,Close,Lock,Unlock, or Seal-Blue",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "LPR-Fail to Open,Close,Lock,Unlock, or Seal-Blue",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Failure of CSR and BSR HP/LP-Blue",
+                                          "value": "OR",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children":[
+                                            {
+                                              "name": "Failure of CSR HP/LP-Blue",
+                                              "value": "AND",
+                                             "id":0, "nodeValue": 0, "alarm": 0,
+                                              "children":[
+                                                {
+                                                  "name": "Failure of CSR Open, Close, (HP)-Blue",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                },
+                                                {
+                                                  "name": "Failure of CSR to Open,Close (LP)-Blue",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                }
+                                              ]
+                                            
+                                            },
+                                            {
+                                              "name": "Failure of UBSR Open, Close, Lock, Unlock or Seal(HP)-Blue",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "ROV OR DMAS",
+                                  "value": "OR",
+                                 "id":0, "nodeValue": 0, "alarm": 0,
+                                  "children": [
+                                    {
+                                      "name": "Failure to Meet ROV Requirements",
+                                      "value": "OR",
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "Failure to Unlatch LMRP via ROV",
+                                          "value": "AND",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children": [
+                                            {
+                                              "name": "Failure of Primary Unlock of Riser Connector-ROV",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "Failure of Secondary Unlock of Riser Connector-ROV",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Failure to Operate PRs and SRs-ROV",
+                                          "value": "AND",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children": [
+                                            {
+                                              "name": "Failure to Operation UPR-ROV",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "Failure to Operate LPR-ROV",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "Failure to Operate UBSR Close-ROV",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "Failure to Operation CSR Close-ROV",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            },
+                                            {
+                                              "name": "Failure to Close Seal and Lock UBSR-ROV",
+                                              "value": "",
+                                             "id":0, "nodeValue": 0, "alarm": 0
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Failure of Deadman Autoshear System",
+                                      "value": 98.33,
+                                     "id":0, "nodeValue": 0, "alarm": 0,
+                                      "children": [
+                                        {
+                                          "name": "DM/AS and Emeregency hydraulic Supply",
+                                          "value": "OR",
+                                         "id":0, "nodeValue": 0, "alarm": 0,
+                                          "children": [
+                                            {
+                                              "name": "Failure to Supply Hydraulic Supply from Surface",
+                                              "value": "OR",
+                                             "id":0, "nodeValue": 0, "alarm": 0,
+                                              "children": [
+                                                {
+                                                  "name": "Failure to Supply Hydraulic From Hotline to Yellow Pod",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                },
+                                                {
+                                                  "name": "Failure to Supply Hydraulic From Blue Conduit to Yellow",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                },
+                                                {
+                                                  "name": "Failure to Supply Hydraulic From Yellow Conduit to Blue",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "name": "Failure of Deadman and Autoshear Function",
+                                              "value": "OR",
+                                             "id":0, "nodeValue": 0, "alarm": 0,
+                                              "children": [
+                                                {
+                                                  "name": "Failure of UBSR to Function in DM/AS",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                },
+                                                {
+                                                  "name": "Failure of CSR to Function in DM/AS",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                },
+                                                {
+                                                  "name": "Failure Isolate Choke and Kill Values During DM/AS Operation",
+                                                  "value": "",
+                                                 "id":0, "nodeValue": 0, "alarm": 0
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        
+      ]
+    }
+  ]
+  }
+  ]
+  }
+  ]
+  }
+  
+  

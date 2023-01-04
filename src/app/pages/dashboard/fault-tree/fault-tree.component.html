@@ -1,0 +1,48 @@
+<div class="row" [formGroup]="searchForm">
+    <div class="col-lg-3">
+        <mat-form-field>
+            <mat-label>POD</mat-label>
+            <mat-select formControlName="podSelect" name="podSelect">
+                <mat-option value="option1">POD A</mat-option>
+                <mat-option value="option3">POD B</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="col-lg-3">
+        <mat-form-field>
+            <mat-label>SEM</mat-label>
+            <mat-select formControlName="semSelect" name="semSelect">
+                <mat-option value="option1">SEM A</mat-option>
+                <mat-option value="option3">SEM B</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="col-lg-3">
+        <mat-select-autocomplete class="mymatselect myselectauto" fxFlex [placeholder]="'Select Functions'"
+            [options]="signals" [multiple]="true" name="functionSelect" formControlName="functionSelect">
+        </mat-select-autocomplete>
+    </div>
+    <div class="col-lg-3">
+        <mat-select-autocomplete  style="padding-top: 0px;" class="myselectauto" fxFlex [placeholder]="'Select Component'"
+            [options]="componentList" [multiple]="true" name="componentSelect" formControlName="componentSelect">
+        </mat-select-autocomplete>
+    </div>
+    <div class="col-lg-12">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button mat-flat-button class="primary-btn mr-1">
+                Initiate Failure(s)
+              </button>
+              <button mat-flat-button class="primary-btn mr-1">Open P&ID</button>
+              <button mat-flat-button class="primary-btn mr-1">Clear</button>
+              <button mat-flat-button class="primary-btn">Generate Report</button>
+        </div>
+        <!-- <div class="row">
+            <div class="col"><button mat-flat-button class="primary-btn mr-1">Initiate Failure(s)</button></div>
+            <div class="col"><button mat-flat-button class="primary-btn mr-1">Open P&ID</button></div>
+            <div class="col"><button mat-flat-button class="primary-btn mr-1">Clear</button></div>
+            <div class="col"><button mat-flat-button class="primary-btn">Generate Report</button></div>
+        </div> -->
+    </div>
+</div>
+
+<div echarts [options]="faultTreeChartOptions" class="demo-chart"></div>
